@@ -11,7 +11,7 @@ route '/' do
 end
 
 menu :index do
-	text 'Welcome to the Sherman Centre for Digital Scholarship'
+	text 'Welcome to the Sherman Centre for Digital Scholarship Gopher Server'
 
 	br(2)
 
@@ -25,5 +25,36 @@ menu :index do
 end
 
 
+route '/about' do
+	render :about
+end
+
+route '/map' do
+	@map = 
+"
+----------------------------------------------------------
+|                                                        |
+|              This is                                   |
+|		a					 |
+|	       Map					 |
+|                                                        |
+|                                                        |
+|							 |
+|							 |
+----------------------------------------------------------
+"
+@map
+end
+
+route '/who' do
+	render :who
+end
 
 
+text :about do
+	@text = "This is a line of text that tells you what the Centre is about."
+end
+
+text :who do
+	@text = "This is a line of text that tells you who works in the Centre."
+end
