@@ -1,1 +1,3 @@
 examples/
+.ruby-version
+.ruby-gemset
