@@ -1,3 +1,4 @@
 examples/
 .ruby-version
 .ruby-gemset
+*.swp
