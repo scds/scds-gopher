@@ -25,6 +25,10 @@ menu :index do
 	br
 
 	link "About our hackerspace", '/hackerspace'
+	br
+
+	link "What is this?", '/what'
+
 end
 
 
@@ -57,6 +61,10 @@ route '/hackerspace' do
 	render :hackerspace
 end
 
+route '/what' do
+	render :what
+end
+
 text :about do
 	@text = "This is a line of text that tells you what the Centre is about."
 end
@@ -67,5 +75,9 @@ end
 
 text :hackerspace do
 	@text = "This is a line of text that tells you about our hackerspace."
+end
+
+text :what do
+	@text = "This is a Digital Equipment Corporation VT320 terminal, hooked up to a Raspberry Pi running Raspbian Linux, with a Gopher server written in the Ruby programming language and using Lynx as a Gopher browser. This type of setup was very common in universities in the early 1990s; Gopher, invented right about the same time as the World Wide Web, was initially favoured because it was kinder on the limited network resources of the time. By 1993 however, the Web had become the preferred protocol for networked hypertext, and Gopher faded into mostly deserved obscurity. Today there are less than 500 active Gopher servers worldwide."
 end
 
