@@ -66,7 +66,13 @@ route '/what' do
 end
 
 text :about do
-	@text = "This is a line of text that tells you what the Centre is about."
+	@text = "The Sherman Centre strives to meet the following objectives:
+
+	To provide a framework of research support for digital scholarship that optimizes library/researcher resource sharing.
+	To provision customized and scalable IT infrastructure to support faculty and graduate student research projects in digital humanities/digital scholarship.
+	To offer technical support and consulting services for digital scholarship projects, such as programming, data management, and systems administration.
+	To promote and develop interdisciplinary digital scholarship networks by providing physical meeting and work spaces.
+	To promote and disseminate McMaster University e-research through archival and access initiatives that interface with global e-research partners."
 end
 
 text :who do
