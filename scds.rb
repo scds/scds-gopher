@@ -70,7 +70,7 @@ text :about do
 end
 
 text :who do
-	@text = "This is a line of text that tells you who works in the Centre."
+	@text = "This is a line of text that tells you who works in the Centre.\nDale Askey\nDale Askey Bio\n\nSandra Lapointe\nSandra Lapointe Bio\n\nMatt McCollow\nMatt McCollow Bio\n\nGabriela Mircea\nGabriela Mircea Bio\n\nJohn Fink\nJohn Fink Bio"
 end
 
 text :hackerspace do
