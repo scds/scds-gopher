@@ -22,6 +22,9 @@ menu :index do
 	br
 
 	link "Who's Who in the Centre", '/who'
+	br
+
+	link "About our hackerspace", '/hackerspace'
 end
 
 
@@ -50,6 +53,9 @@ route '/who' do
 	render :who
 end
 
+route '/hackerspace' do
+	render :hackerspace
+end
 
 text :about do
 	@text = "This is a line of text that tells you what the Centre is about."
@@ -58,3 +64,8 @@ end
 text :who do
 	@text = "This is a line of text that tells you who works in the Centre."
 end
+
+text :hackerspace do
+	@text = "This is a line of text that tells you about our hackerspace."
+end
+
